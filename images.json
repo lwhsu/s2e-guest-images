@@ -1,6 +1,27 @@
 {
   "version": 3,
   "images": {
+    "freebsd-15.1-x86_64-s2ekernel": {
+      "name": "FreeBSD 15.1 x86_64 image with a kernel built from source (drivers as modules)",
+      "image_group": "freebsd",
+      "url": "",
+      "iso": {
+        "url": "https://download.freebsd.org/releases/VM-IMAGES/15.1-RELEASE/amd64/Latest/FreeBSD-15.1-RELEASE-amd64-ufs.raw.xz"
+      },
+      "os": {
+        "name": "freebsd",
+        "version": "15.1",
+        "arch": "x86_64",
+        "build": "s2ekernel",
+        "binary_formats": ["elf"]
+      },
+      "hw": {
+        "default_disk_size": "6G",
+        "default_snapshot_size": "512M",
+        "nic": "e1000"
+      }
+    },
+
     "freebsd-15.1-x86_64": {
       "name": "FreeBSD 15.1 x86_64 image",
       "image_group": "freebsd",
