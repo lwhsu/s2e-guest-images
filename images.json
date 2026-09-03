@@ -1,6 +1,27 @@
 {
   "version": 3,
   "images": {
+    "freebsd-15.1-x86_64": {
+      "name": "FreeBSD 15.1 x86_64 image",
+      "image_group": "freebsd",
+      "url": "",
+      "iso": {
+        "url": "https://download.freebsd.org/releases/VM-IMAGES/15.1-RELEASE/amd64/Latest/FreeBSD-15.1-RELEASE-amd64-ufs.raw.xz"
+      },
+      "os": {
+        "name": "freebsd",
+        "version": "15.1",
+        "arch": "x86_64",
+        "build": "",
+        "binary_formats": ["elf"]
+      },
+      "hw": {
+        "default_disk_size": "6G",
+        "default_snapshot_size": "512M",
+        "nic": "e1000"
+      }
+    },
+
     "ubuntu-24.04-x86_64": {
       "name": "Ubuntu x86_64 image",
       "image_group": "linux",
