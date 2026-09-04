@@ -1,28 +1,8 @@
 {
   "version": 3,
   "images": {
-    "freebsd-main-x86_64": {
-      "name": "FreeBSD main (16-CURRENT) x86_64 image, world and S2E kernel built from source",
-      "image_group": "freebsd",
-      "url": "",
-      "iso": {
-        "url": "https://download.freebsd.org/releases/VM-IMAGES/15.1-RELEASE/amd64/Latest/FreeBSD-15.1-RELEASE-amd64-ufs.raw.xz"
-      },
-      "os": {
-        "name": "freebsd",
-        "version": "16.0",
-        "arch": "x86_64",
-        "build": "main",
-        "binary_formats": ["elf"]
-      },
-      "hw": {
-        "default_disk_size": "6G",
-        "default_snapshot_size": "512M",
-        "nic": "e1000"
-      }
-    },
-    "freebsd-stable15-x86_64": {
-      "name": "FreeBSD stable/15 x86_64 image, world and S2E kernel built from source",
+    "freebsd-15.1-x86_64": {
+      "name": "FreeBSD 15.1 x86_64 image",
       "image_group": "freebsd",
       "url": "",
       "iso": {
@@ -32,8 +12,10 @@
         "name": "freebsd",
         "version": "15.1",
         "arch": "x86_64",
-        "build": "stable15",
-        "binary_formats": ["elf"]
+        "build": "",
+        "binary_formats": [
+          "elf"
+        ]
       },
       "hw": {
         "default_disk_size": "6G",
@@ -53,7 +35,9 @@
         "version": "15.1",
         "arch": "x86_64",
         "build": "s2ekernel",
-        "binary_formats": ["elf"]
+        "binary_formats": [
+          "elf"
+        ]
       },
       "hw": {
         "default_disk_size": "6G",
@@ -61,9 +45,8 @@
         "nic": "e1000"
       }
     },
-
-    "freebsd-15.1-x86_64": {
-      "name": "FreeBSD 15.1 x86_64 image",
+    "freebsd-stable15-x86_64": {
+      "name": "FreeBSD stable/15 x86_64 image, world and S2E kernel built from source",
       "image_group": "freebsd",
       "url": "",
       "iso": {
@@ -73,8 +56,10 @@
         "name": "freebsd",
         "version": "15.1",
         "arch": "x86_64",
-        "build": "",
-        "binary_formats": ["elf"]
+        "build": "stable15",
+        "binary_formats": [
+          "elf"
+        ]
       },
       "hw": {
         "default_disk_size": "6G",
@@ -82,7 +67,28 @@
         "nic": "e1000"
       }
     },
-
+    "freebsd-main-x86_64": {
+      "name": "FreeBSD main (16-CURRENT) x86_64 image, world and S2E kernel built from source",
+      "image_group": "freebsd",
+      "url": "",
+      "iso": {
+        "url": "https://download.freebsd.org/releases/VM-IMAGES/15.1-RELEASE/amd64/Latest/FreeBSD-15.1-RELEASE-amd64-ufs.raw.xz"
+      },
+      "os": {
+        "name": "freebsd",
+        "version": "16.0",
+        "arch": "x86_64",
+        "build": "main",
+        "binary_formats": [
+          "elf"
+        ]
+      },
+      "hw": {
+        "default_disk_size": "6G",
+        "default_snapshot_size": "512M",
+        "nic": "e1000"
+      }
+    },
     "ubuntu-24.04-x86_64": {
       "name": "Ubuntu x86_64 image",
       "image_group": "linux",
@@ -95,7 +101,9 @@
         "version": "24.04",
         "arch": "x86_64",
         "build": "",
-        "binary_formats": ["elf"]
+        "binary_formats": [
+          "elf"
+        ]
       },
       "hw": {
         "default_disk_size": "8G",
@@ -103,7 +111,6 @@
         "nic": "e1000"
       }
     },
-
     "ubuntu-22.04-x86_64": {
       "name": "Ubuntu x86_64 image",
       "image_group": "linux",
@@ -116,7 +123,9 @@
         "version": "22.04",
         "arch": "x86_64",
         "build": "",
-        "binary_formats": ["elf"]
+        "binary_formats": [
+          "elf"
+        ]
       },
       "hw": {
         "default_disk_size": "8G",
@@ -124,7 +133,6 @@
         "nic": "e1000"
       }
     },
-
     "debian-12.5-i386": {
       "name": "Debian i386 image",
       "image_group": "linux",
@@ -137,7 +145,10 @@
         "version": "12.5",
         "arch": "i386",
         "build": "",
-        "binary_formats": ["elf", "decree"]
+        "binary_formats": [
+          "elf",
+          "decree"
+        ]
       },
       "hw": {
         "default_disk_size": "8G",
@@ -145,7 +156,6 @@
         "nic": "e1000"
       }
     },
-
     "debian-12.5-x86_64": {
       "name": "Debian x86_64 image",
       "image_group": "linux",
@@ -158,7 +168,9 @@
         "version": "12.5",
         "arch": "x86_64",
         "build": "",
-        "binary_formats": ["elf"]
+        "binary_formats": [
+          "elf"
+        ]
       },
       "hw": {
         "default_disk_size": "8G",
@@ -166,7 +178,6 @@
         "nic": "e1000"
       }
     },
-
     "windows-xpsp3pro-i386": {
       "name": "Windows XP Professional SP3 i386",
       "image_group": "windows",
@@ -181,7 +192,9 @@
         "version": "xpsp3pro",
         "arch": "i386",
         "build": "2600",
-        "binary_formats": ["pe"]
+        "binary_formats": [
+          "pe"
+        ]
       },
       "hw": {
         "default_disk_size": "12G",
@@ -190,23 +203,23 @@
         "cpu": "core2duo"
       }
     },
-
-
     "windows-7sp1ent-x86_64": {
       "name": "Windows 7 Enterprise SP1 x86_64",
       "image_group": "windows",
       "url": "",
       "iso": {
-         "name": "en_windows_7_enterprise_with_sp1_x64_dvd_u_677651.iso",
-         "sha1": "a491f985dccfb5863f31b728dddbedb2ff4df8d1"
+        "name": "en_windows_7_enterprise_with_sp1_x64_dvd_u_677651.iso",
+        "sha1": "a491f985dccfb5863f31b728dddbedb2ff4df8d1"
       },
       "os": {
-       "family": "windows",
-       "name": "windows",
-       "version": "7sp1ent",
-       "arch": "x86_64",
-       "build": "7600.16385",
-       "binary_formats": ["pe"]
+        "family": "windows",
+        "name": "windows",
+        "version": "7sp1ent",
+        "arch": "x86_64",
+        "build": "7600.16385",
+        "binary_formats": [
+          "pe"
+        ]
       },
       "hw": {
         "default_disk_size": "30G",
@@ -215,24 +228,24 @@
         "cpu": "core2duo"
       }
     },
-
-
     "windows-7sp1pro-i386": {
       "name": "Windows 7 Professional SP1 i386",
       "image_group": "windows",
       "url": "",
       "iso": {
-         "name": "en_windows_7_professional_with_sp1_x86_dvd_u_677056.iso",
-         "sha1": "d89937df3a9bc2ec1a1486195fd308cd3dade928"
+        "name": "en_windows_7_professional_with_sp1_x86_dvd_u_677056.iso",
+        "sha1": "d89937df3a9bc2ec1a1486195fd308cd3dade928"
       },
       "os": {
-       "family": "windows",
-       "name": "windows",
-       "image_name": "Windows 7 Professional",
-       "version": "7sp1pro",
-       "arch": "i386",
-       "build": "7601.17514",
-       "binary_formats": ["pe"]
+        "family": "windows",
+        "name": "windows",
+        "image_name": "Windows 7 Professional",
+        "version": "7sp1pro",
+        "arch": "i386",
+        "build": "7601.17514",
+        "binary_formats": [
+          "pe"
+        ]
       },
       "hw": {
         "default_disk_size": "30G",
@@ -241,7 +254,6 @@
         "cpu": "core2duo"
       }
     },
-
     "windows-10pro1909-x86_64": {
       "name": "Windows 10 Pro 1909 x86_64",
       "image_group": "windows",
@@ -258,7 +270,9 @@
         "version": "10pro1909",
         "arch": "x86_64",
         "build": "1909",
-        "binary_formats": ["pe"]
+        "binary_formats": [
+          "pe"
+        ]
       },
       "hw": {
         "default_disk_size": "30G",
